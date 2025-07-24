@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0a0a23] text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            preahvihear: ['Preahvihear', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  
+</head>
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+<body class="font-preahvihear bg-[#0a0a23] text-white min-h-screen">
+  <header class="flex justify-between items-center px-8 py-6 bg-[#0f0f2b]">
+    <div class="flex-shrink-0">
+  <img src="Logo.png" alt="Logo" class="">
+</div>
+    <!-- Desktop Menu (visible on md and up) -->
+<nav class="space-x-8 text-white hidden md:flex">
+  <a href="#" class="hover:text-purple-300">Home</a>
+  <a href="#" class="hover:text-purple-300">About</a>
+  <a href="#" class="hover:text-purple-300">Lab</a>
+</nav>
+
+<!-- Hamburger Button (visible below md) -->
+<div class="md:hidden relative z-50">
+  <button id="hamburgerBtn" class="text-white focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Mobile Menu (hidden by default, shown when toggled) -->
+<div id="mobileMenu" class="hidden absolute top-20 left-0 w-full bg-[#0f0f2b] text-white flex flex-col items-start space-y-4 px-8 py-4 md:hidden z-40 shadow-lg">
+  <a href="#" class="hover:text-purple-300">Home</a>
+  <a href="#" class="hover:text-purple-300">About</a>
+  <a href="#" class="hover:text-purple-300">Lab</a>
+</div>
+
+  </header>
+  
+
+<section class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 py-10 max-w-7xl mx-auto">
+    <div class="relative">
+      <div class="w-64 h-64 rounded-full bg-gradient-to-br from-purple-700 via-purple-900 to-transparent blur-2xl absolute -inset-4 z-0"></div>
+
+      <img src="Me.png" alt="emoji" id="hoverImg"
+  class="relative z-10 w-40 h-40 rounded-full shadow-2xl mx-auto transition-transform duration-500 hover:scale-110 hover:rotate-1" />
+
+    </div>
+
+<div class="text-left max-w-xl fade-up" id="heroText">
+    <p class="text-sm text-purple-300 mb-1 ">Hello! I Am  Ibrahim Memon</p>        
+      <p class="text-sm text-[#FFFFFF]-300 mb-1 mt-20">A Designer who</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-3">
+        Judges a book<br>by its <span class="text-purple-400 ">cover</span>...
+      </h1>
+      <p class="text-gray-400 text-sm">
+        Because if the cover does not impress you, what else can?
+      </p>
+    </div>
+  </section>
+
+  <section class="text-left  max-w-4xl mx-auto">
+    <h2 class="text-2xl mt-6 font-semibold">I'm a <span class="text-white">Software Engineer.</span></h2>
+    <p class="text-sm text-gray-300 mt-1">
+      Currently, I'm a Software Engineer at <a href="#" class="text-blue-400 underline">@Facebook</a>
+    </p>
+    <p class="text-gray-400 text-sm mt-4">
+      A self-taught UI/UX designer, functioning in the industry for 3+ years now.
+      I make meaningful and delightful digital products that create an equilibrium
+      between user needs and business goals.
+    </p>
+  </section>
+
+  <section class="px-4 sm:px-6 lg:px-16 py-20 max-w-[1000px] mx-auto">
+  <h2 class="text-white text-3xl font-semibold mb-10">Work Experience</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <!-- Card 1 -->
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
+      <img src="Icon1.png" alt="Star" class="w-20 h-20">
+      <div class="text-left">
+        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
+      <img src="Icon2.png" alt="Bulb" class="w-20 h-20">
+      <div class="text-left">
+        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
+      <img src="Icon3.png" alt="Hat" class="w-20 h-20">
+      <div class="text-left">
+        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
+      <img src="Icon4.png" alt="Dropper" class="w-20 h-20">
+      <div class="text-left">
+        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--Icons -->
+<section class="text-center py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a23]">
+  <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-semibold">
+    I'm currently looking to join a 
+    <span class="text-purple-400 font-bold">cross-functional</span> team
+  </h2>
+  <p class="text-gray-300 mt-2 text-sm sm:text-base max-w-xl mx-auto">
+    that values improving people's lives through accessible design
+  </p>
+
+  <div class="relative flex flex-col items-center justify-center">
+        <div class="flex justify-center gap-4 z-10 mt-20">
+      <img src="Rectangle 1.png" alt="icon1" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 2.png" alt="icon2" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 3.png" alt="icon3" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 4.png" alt="icon4" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 5.png" alt="icon5" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 6.png" alt="icon6" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 7.png" alt="icon7" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+    </div>
+
+    <div class="flex justify-center gap-4 z-10 mt-6">
+      <img src="Rectangle 8.png" alt="icon8" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+            <img src="Rectangle 9.png" alt="icon8" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 10.png" alt="icon9" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 11.png" alt="icon10" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 12.png" alt="icon11" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+      <img src="Rectangle 13.png" alt="icon12" class="relative z-10 w-8 h-8 mx-auto mt-4 object-contain" />
+    </div>
+
+  </div>
+
+<div class="relative flex justify-center items-center py-40">
+
+  <!-- SVG: Curved Connector Lines -->
+  <svg class="absolute top-[-50px] left-1/2 transform -translate-x-1/2 z-0" width="500" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M140,50 C250,180 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M180,50 C250,160 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M230,50 C250,140 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M270,50 C250,140 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M320,50 C250,160 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M350,50 C250,180 250,200 250,250" stroke="#7e5bef" stroke-opacity="0.3" stroke-width="1"/>
+  </svg>
+
+
+  <div class="relative -mt-4 w-40 h-40 flex items-center justify-center rounded-full bg-gradient-to-br from-[#130428] via-[#38126D] to-[#190634] shadow-[0_0_60px_20px_rgba(165,105,255,0.3)]">
+  <div class="absolute w-full h-full rounded-full bg-purple-500 blur-3xl opacity-30"></div>
+  <img src="Group 1897.png" alt="Logo" class="w-16 h-16 relative z-10">
+</div>
+
+</div>
+
+</section>
+
+<!--Project-->
+<section class="bg-[#0a0a23] text-white  px-40">
+  <div class="max-w-6xl mx-auto space-y-40 ">
+    <div class="grid md:grid-cols-2 gap-10 items-center relative">
+      <div class="transform translate-x-20 relative z-10">
+        <p class="text-sm text-purple-400 font-semibold">Featured Project</p>
+        <h3 class="text-2xl font-bold mt-1">Example Project</h3>
+        <div class="   mt-6 max-w-md rounded-lg bg-gradient-to-br from-[#1a1a2e] to-[#1f1f3a] p-6 shadow-lg z-1">
+          <p class="text-gray-300 text-sm">
+            A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+          </p>
+        </div>
+      </div>
+     <div class="relative group w-full h-full overflow-visible">
+  <div class="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-purple-500 rounded-full blur-[120px] opacity-50 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+        <img src="ProjectBG.png" alt="Background" class="w-full h-full object-cover rounded-lg">
+  <img src="Project1.png" alt="Overlay" 
+       class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 h-100 pt-10 pl-10">
+        
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 items-center relative">
+     <div class="relative group w-full h-full overflow-visible">
+  <div class="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-purple-500 rounded-full blur-[120px] opacity-50 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+        <img src="ProjectBG.png" alt="Background" class="w-full h-full object-cover rounded-lg">
+  <img src="Project2.png" alt="Overlay" 
+       class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 h-100 pt-10 pl-10">        
+      </div>
+      <div class="md:order-last text-right transform -translate-x-20">
+        <p class="text-sm text-purple-400 font-semibold">Featured Project</p>
+        <h3 class="text-2xl font-bold mt-1 items-end">Example Project</h3>
+        <div class="mt-6 max-w-md rounded-lg bg-gradient-to-br from-[#17173c] to-[#4f4f4f] p-6 shadow-lg">
+          <p class="text-gray-300 text-sm">
+            A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="bg-[#0a0a23] text-white py-16 px-6 md:px-24">
+  <h2 class="text-2xl md:text-3xl font-medium mb-6">Contact</h2>
+  <p class="max-w-xl text-sm md:text-base mb-6 leading-relaxed mt-20">
+    I’m currently looking to join a cross-functional team that values improving people’s lives through accessible design. 
+    Or have a project in mind? Let’s connect.
+  </p>
+  <p class="mb-6 text-sm md:text-base">ibrahimmemon930@gmail.com</p> 
+  <div class="flex gap-6 items-center">
+    <img src="SocialIcons.png" alt="socialIcons">
+  </div>
+</footer>
+
+<style>
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  window.addEventListener('load', () => {
+    const heroText = document.getElementById('heroText');
+    heroText.classList.add('show');
+  });
+</script>
+
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.3,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('opacity-100', 'translate-y-0');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+
+</body>
+</html>
