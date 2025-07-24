@@ -20,15 +20,6 @@
 
   
 </head>
-<script>
-  const hamburgerBtn = document.getElementById('hamburgerBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  hamburgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
 
 <body class="font-preahvihear bg-[#0a0a23] text-white min-h-screen">
   <header class="flex justify-between items-center px-8 py-6 bg-[#0f0f2b]">
@@ -52,7 +43,7 @@
 </div>
 
 <!-- Mobile Menu (hidden by default, shown when toggled) -->
-<div id="mobileMenu" class="hidden absolute top-20 left-0 w-full bg-[#0f0f2b] text-white flex flex-col items-start space-y-4 px-8 py-4 md:hidden z-40 shadow-lg">
+<div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-[#0f0f2b] text-white flex flex-col items-start space-y-4 px-8 py-4 md:hidden z-40 shadow-lg">
   <a href="#" class="hover:text-purple-300">Home</a>
   <a href="#" class="hover:text-purple-300">About</a>
   <a href="#" class="hover:text-purple-300">Lab</a>
@@ -94,48 +85,48 @@
     </p>
   </section>
 
-  <section class="px-4 sm:px-6 lg:px-16 py-20 max-w-[1000px] mx-auto">
+  <section class="px-4 sm:px-6 lg:px-8 py-20 max-w-6xl mx-auto">
   <h2 class="text-white text-3xl font-semibold mb-10">Work Experience</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
     
     <!-- Card 1 -->
-<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
-      <img src="Icon1.png" alt="Star" class="w-20 h-20">
-      <div class="text-left">
-        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
-        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
-<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in hover:transform hover:scale-105 hover:shadow-2xl">
+      <img src="Icon1.png" alt="Star" class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+      <div class="text-center sm:text-left">
+        <h3 class="text-white text-lg sm:text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300 animate-pulse">LEARN MORE</button>
       </div>
     </div>
 
     <!-- Card 2 -->
-<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
-      <img src="Icon2.png" alt="Bulb" class="w-20 h-20">
-      <div class="text-left">
-        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
-        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
-<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in hover:transform hover:scale-105 hover:shadow-2xl">
+      <img src="Icon2.png" alt="Bulb" class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+      <div class="text-center sm:text-left">
+        <h3 class="text-white text-lg sm:text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300 animate-pulse">LEARN MORE</button>
       </div>
     </div>
 
     <!-- Card 3 -->
-<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
-      <img src="Icon3.png" alt="Hat" class="w-20 h-20">
-      <div class="text-left">
-        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
-        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
-<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in hover:transform hover:scale-105 hover:shadow-2xl">
+      <img src="Icon3.png" alt="Hat" class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+      <div class="text-center sm:text-left">
+        <h3 class="text-white text-lg sm:text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300 animate-pulse">LEARN MORE</button>
       </div>
     </div>
 
     <!-- Card 4 -->
-<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-6 flex items-center gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in" ...>
-      <img src="Icon4.png" alt="Dropper" class="w-20 h-20">
-      <div class="text-left">
-        <h3 class="text-white text-xl font-bold mb-2">CIB on the Mobile</h3>
-        <p class="text-gray-300 text-sm mb-4 max-w-md">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
-<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300">LEARN MORE</button>
+<div class="w-full border-t-4 border-purple-600 bg-gradient-to-br from-[#130428] via-[#38126D] rounded-[15px] p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shadow-[4px_7px_26px_rgba(0,0,0,0.12)] opacity-0 translate-y-8 transition duration-1000 fade-in hover:transform hover:scale-105 hover:shadow-2xl">
+      <img src="Icon4.png" alt="Dropper" class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+      <div class="text-center sm:text-left">
+        <h3 class="text-white text-lg sm:text-xl font-bold mb-2">CIB on the Mobile</h3>
+        <p class="text-gray-300 text-sm mb-4">Take your client onboard seamlessly by our amazing load of digital onboard process.</p>
+<button class="text-white border border-white px-4 py-2 text-xs rounded hover:bg-white hover:text-black transition transform hover:scale-105 duration-300 animate-pulse">LEARN MORE</button>
       </div>
     </div>
 
@@ -196,13 +187,13 @@
 </section>
 
 <!--Project-->
-<section class="bg-[#0a0a23] text-white  px-40">
+<section class="bg-[#0a0a23] text-white px-4 sm:px-8 lg:px-40">
   <div class="max-w-6xl mx-auto space-y-40 ">
-    <div class="grid md:grid-cols-2 gap-10 items-center relative">
-      <div class="transform translate-x-20 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-10 items-center relative">
+      <div class="transform lg:translate-x-20 relative z-10">
         <p class="text-sm text-purple-400 font-semibold">Featured Project</p>
         <h3 class="text-2xl font-bold mt-1">Example Project</h3>
-        <div class="   mt-6 max-w-md rounded-lg bg-gradient-to-br from-[#1a1a2e] to-[#1f1f3a] p-6 shadow-lg z-1">
+        <div class="mt-6 max-w-md rounded-lg bg-gradient-to-br from-[#1a1a2e] to-[#1f1f3a] p-6 shadow-lg z-1">
           <p class="text-gray-300 text-sm">
             A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
           </p>
@@ -217,14 +208,14 @@
       </div>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-5 items-center relative">
+    <div class="grid lg:grid-cols-2 gap-5 items-center relative">
      <div class="relative group w-full h-full overflow-visible">
   <div class="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-purple-500 rounded-full blur-[120px] opacity-50 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
         <img src="ProjectBG.png" alt="Background" class="w-full h-full object-cover rounded-lg">
   <img src="Project2.png" alt="Overlay" 
        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 h-100 pt-10 pl-10">        
       </div>
-      <div class="md:order-last text-right transform -translate-x-20">
+      <div class="lg:order-last text-right transform lg:-translate-x-20">
         <p class="text-sm text-purple-400 font-semibold">Featured Project</p>
         <h3 class="text-2xl font-bold mt-1 items-end">Example Project</h3>
         <div class="mt-6 max-w-md rounded-lg bg-gradient-to-br from-[#17173c] to-[#4f4f4f] p-6 shadow-lg">
@@ -260,9 +251,34 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
 </style>
 
 <script>
+  // Hamburger menu functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+
   window.addEventListener('load', () => {
     const heroText = document.getElementById('heroText');
     heroText.classList.add('show');
